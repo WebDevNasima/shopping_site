@@ -1,0 +1,395 @@
+:root {
+  --white: #fff;
+  --kalo: #3e4152;
+  --gray: #e3e6f3;
+  --blue1: #0db7af;
+  --blue: #fb56c1;
+  --blue: #a5bd3c;
+  --color1: #ff912e;
+  --color: #f2c260;
+  --orange: #f26a10;
+
+  --border: 0.1rem solid rgba(0, 0, 0, 0.1);
+  --outline: 0.1rem solid rgba(0, 0, 0, 0.1);
+  --box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-padding-top: 7rem;
+}
+body {
+  width: 100%;
+}
+
+h1 {
+  font-size: 50px;
+  font-weight: 500;
+  color: var(--kalo);
+}
+h2 {
+  font-size: 32px;
+  line-height: 54px;
+  color: var(--kalo);
+}
+h4 {
+  font-size: 20px;
+  color: var(--kalo);
+}
+h6 {
+  font-size: 12px;
+  font-weight: 700;
+}
+p {
+  font-size: 16px;
+  color: var(--kalo);
+  letter-spacing: 0.04rem;
+  margin: 15px 0 20px 0;
+}
+.section-p1 {
+  padding: 40px 80px;
+}
+.section-m1 {
+  margin: 40px 0;
+}
+section {
+  padding: 20px 60px 0 60px;
+}
+/* Header Starts */
+
+#header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 60px;
+  background: var(--white);
+  box-shadow: var(--box-shadow);
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+#header .logo {
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: -0.1rem;
+  color: var(--orange);
+}
+#header .logo span {
+  color: var(--blue);
+}
+
+#header .icons div {
+  padding-right: 30px;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  font-size: 11px;
+}
+#header .icons div:last-child {
+  padding-right: 0;
+}
+#header .icons div:hover {
+  color: var(--orange);
+}
+
+#header .icons div a {
+  font-size: 18px;
+  line-height: 3.6rem;
+  display: inline-block;
+  color: var(--kalo);
+  cursor: pointer;
+}
+#header .icons div span {
+  display: block;
+  margin-top: -0.7rem;
+}
+#header .icons div a:hover,
+#header .icons div a.active {
+  color: var(--orange);
+}
+#header .icons div a.active::after,
+#header .icons div a:hover::after {
+  content: "";
+  width: 53%;
+  height: 1px;
+  background: var(--orange);
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+}
+
+#header i {
+  padding-left: 30px;
+  font-size: 20px;
+  color: var(--kalo);
+}
+#mobile {
+  display: none;
+  align-items: center;
+}
+#close {
+  display: none;
+}
+#navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#navbar li {
+  list-style: none;
+  padding: 0 20px;
+  position: relative;
+}
+#navbar li a {
+  font-size: 15px;
+  font-weight: 500;
+  color: #465b52;
+  transition: 0.3s ease;
+}
+#navbar li a:hover,
+#navbar li a.active {
+  color: var(--orange);
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after {
+  content: "";
+  width: 52%;
+  height: 1px;
+  background: var(--orange);
+  position: absolute;
+  bottom: -3px;
+  left: 20px;
+}
+
+/* Hero Starts */
+
+#hero {
+  background: var(--white);
+  padding-top: 60px;
+}
+.hero .col-6 img {
+  height: 46rem;
+  padding-top: 40px;
+}
+.hero {
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#hero h4 {
+  font-size: 18px;
+  letter-spacing: 0.2rem;
+  font-weight: 600;
+  padding-bottom: 15px;
+  color: var(--kalo);
+}
+#hero h1 {
+  color: var(--kalo);
+  font-weight: 600;
+}
+
+#hero h2 {
+  font-size: 25px;
+  color: var(--kalo);
+  font-weight: 500;
+}
+
+#hero h2 span {
+  display: block;
+  margin-top: -2rem;
+}
+
+#hero button {
+  padding: 10px 40px 10px 45px;
+  border: 0;
+  border-radius: 2px;
+  background: var(--orange);
+  font-size: 17px;
+  color: var(--white);
+  border: 1.5px solid var(--orange);
+  transition: 0.3s linear;
+  cursor: pointer;
+  clip-path: polygon(93% 0, 100% 50%, 93% 100%, 9% 100%, 18% 50%, 11% 1%);
+}
+#hero button:hover {
+  background: var(--blue);
+}
+#hero button span {
+  transition: 0.3s linear;
+}
+
+#hero button:hover span {
+  padding-left: 1rem;
+}
+
+/* Shop Starts */
+/* Blogs Starts */
+/* About Starts */
+/* Contact Starts */
+
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+
+  #navbar li a {
+    font-size: 15px;
+  }
+
+  h1 {
+    font-size: 38px;
+  }
+  .hero p {
+    width: 350px;
+  }
+}
+
+@media (max-width: 768px) {
+}
+
+/* Starts our media Queries */
+@media (max-width: 799px) {
+  html {
+    font-size: 53%;
+  }
+  section {
+    padding: 20px 40px 0 40px;
+  }
+  #header {
+    padding: 20px 40px;
+  }
+  #hero {
+    padding-top: 90px;
+  }
+
+  #navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: fixed;
+    top: 0;
+    right: -330px;
+    height: 100vh;
+    width: 300px;
+    background: var(--white);
+    box-shadow: var(--box-shadow);
+    padding: 80px 0 0 10px;
+    z-index: 1000;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    transition: 0.3s;
+  }
+  #navbar.active {
+    right: 0px;
+  }
+  #navbar li {
+    margin-bottom: 25px;
+  }
+  #bar {
+    font-size: 19px;
+  }
+  #close {
+    display: initial;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    color: var(--kalo);
+    font-size: 19px;
+  }
+  #mobile {
+    display: flex;
+    align-items: center;
+  }
+  h1 {
+    font-size: 30px;
+  }
+  #header .icons div a {
+    font-size: 15px;
+  }
+  #navbar li a {
+    font-size: 14px;
+  }
+  #hero button {
+    padding: 8px 18px 8px 30px;
+    font-size: 13px;
+  }
+  #hero p {
+    width: 300px;
+  }
+}
+
+@media (max-width: 706px) {
+  html {
+    font-size: 45%;
+  }
+  #header {
+  }
+  section {
+  }
+  #bar {
+    font-size: 13px;
+  }
+  #close {
+    font-size: 13px;
+  }
+  #navbar li a {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 600px) {
+  #hero {
+    padding-top: 140px;
+  }
+  .hero .col-6 img {
+    height: 38rem;
+    padding-top: 40px;
+  }
+  .hero {
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+}
+@media (max-width: 400px) {
+  html {
+    font-size: 35%;
+  }
+  h1 {
+    font-size: 23px;
+  }
+
+  #header .icons div {
+    padding-right: 12px;
+    font-size: 12px;
+  }
+  #header .icons div a {
+    font-size: 14px;
+  }
+  #hero h2 {
+    font-size: 20px;
+    padding: 10px 0 0;
+  }
+  #hero h2 span {
+    margin-top: -5rem;
+  }
+}
